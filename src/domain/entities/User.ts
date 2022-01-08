@@ -11,3 +11,5 @@ export type User = {
   description: string
   socialLinks: string[]
 }
+
+export type UserParams = Omit<User, 'id'>
