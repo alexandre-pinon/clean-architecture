@@ -1,4 +1,4 @@
-import { Role } from '@/custom-types'
+import { Role } from '@custom-types'
 
 export type User = {
   id: string | number

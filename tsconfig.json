@@ -29,11 +29,13 @@
     // "moduleResolution": "node",                       /* Specify how TypeScript looks up a file from a given module specifier. */
     "baseUrl": "src" /* Specify the base directory to resolve non-relative module names. */,
     "paths": {
-      "@/custom-types": ["types/index"],
-      "@/entities": ["domain/entities/index"],
-      "@/repositories": ["domain/repositories/index"],
-      "@/use-cases": ["application/use-cases/index"],
-      "@/controllers": ["interface/controllers/index"]
+      "@custom-types": ["types/index"],
+      "@entities": ["domain/entities/index"],
+      "@repositories": ["domain/repositories/index"],
+      "@use-cases": ["application/use-cases/index"],
+      "@controllers": ["interface/controllers/index"],
+      "@express/*": ["infrastructure/adapters/express/*"],
+      "@mongoose/*": ["infrastructure/adapters/mongoose/*"]
     } /* Specify a set of entries that re-map imports to additional lookup locations. */,
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
